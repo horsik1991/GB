@@ -1,0 +1,107 @@
+/*Все страницы*/
+*
+{
+	margin: 0;
+	padding: 0;
+}
+html
+{
+	background-color: #6690D0;
+}
+div
+{
+	border: 3px groove gold;
+}
+h1,.header3
+{
+	text-align: center;
+}
+
+/*Меню*/
+.main_menu	
+{
+	float: left;
+	width: 120px;
+	list-style-position: inside;
+	list-style-image: url(../img/icon.png);
+
+}
+.main_menu ul li a
+{
+	text-decoration: none;
+	font-family: cyrillicold;
+	font: cyrillicold;
+	font-size: 18px;
+}
+.main_menu ul li a:active
+{
+	color: lime;
+}
+.main_menu ul li a:visited
+{
+	color: gold;
+}
+.main_menu ul li a:hover
+{
+	text-decoration: underline;
+	transform: 0.3s;
+	padding: 5px;
+	color: white;
+}
+/*index*/
+.hi_word
+{
+	margin-left: 135px;
+	
+	width:550px;
+}
+.main_icon
+{
+	float: left;
+}
+.header
+{
+	background-color: grey;
+	height: 100px;
+	border:2px solid lime;
+	text-align: center;
+}
+.img, .main_icon
+{
+	width: 100px;
+	height: 100px;
+}
+/* IMG расположены на страницах: Каталог, Товары (на каждом из них)*/
+.img
+{
+	border: 3px groove lime;
+	display: block;
+
+}
+/*Контакты*/
+form fieldset label, .input_fields input
+{
+	display: block;
+}
+ form fieldset
+ {
+ 	display: inline-block;
+ }
+ form div
+ {
+ 	border:0;
+ }
+.reg_form
+{
+	margin:0 auto;
+}
+.input_fields input
+{
+	width: 200px;
+	height: 20px;
+}
+/*Запрет обтекания на страницах Товаров*/
+.item, .img
+{
+	clear: both;
+}

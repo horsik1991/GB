@@ -1,0 +1,71 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	font-family: Arial,Helvetica,FreeSans,'Liberation Sans','Nimbus Sans L',sans-serif;
+	font-weight: bold;
+}
+.wrapper
+{
+	width: auto;
+	margin:0 auto;
+}
+
+/*Блок с верхним меню*/
+.symbol
+{
+	font-size: 10px;
+}
+.hor_menu_main
+{
+	background:#1D5E52;
+	background: linear-gradient(to top,#184A48,#1E5F52);
+	height: 40px;
+	font-size: 13px;
+}
+.hor_menu_main ul li
+{
+	padding-left:19px;
+	padding-top:10px;
+	display:table-cell;
+	vertical-align: middle;
+}
+.hor_menu_main ul li:last-child a
+{
+	border-bottom: 1px dashed white;
+	text-decoration: none;
+}
+.hor_menu_main ul li a:link,.hor_menu_main ul li a:visited
+{
+	color:white;
+}
+.hor_menu_main ul li a:hover, .city
+{
+	color:#FF6600;
+}
+/*Шапка*/
+.header img
+{
+	padding: 20px 20px 5px 20px;
+	float: left;
+} 
+.header
+{
+	background-image: url(img/bg.jpg);
+	background-repeat: repeat;
+	height: 110px;
+	background-color: rgba(0, 120, 201, 0.7);
+
+
+}
+.clear
+{
+	clear: both;
+}
+.city
+{
+	padding-left: 30px;
+}

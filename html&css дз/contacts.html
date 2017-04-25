@@ -6,52 +6,60 @@
 	<title>Контакты</title>
 </head>
 <body>
-<h3>Меню сайта</h3>
-		<div class="main_menu">
-			<ul>
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="aboutUs.html">О нас</a></li>
-				<li><a href="Contacts.html">Контакты</a></li>
-			</ul>
-		</div>
-<form action="#" class="reg_form">
-	<fieldset>
-		<legend>Напишите нам:</legend>
-		<div class="input_fields">
-			<label for="name">Ваше имя</label>
-			<input type="text" name="name" placeholder="Иван">
-			<label for="surname">Ваша фамилия</label>
-			<input type="text" name="surname" placeholder="Сусанин">
-			<label for="email">Ваш е-мейл:</label>
-			<input type="text" name="email" placeholder="daleko_v_lesah@boloto.org">
-		</div>
-		<div class="comment">
-			<textarea name="comment" placeholder="Комментарий" cols="35" rows="15"></textarea>
-		</div>
-		<div class="anketa">
-			<label for="radio">Какой вид электроники Вам больше нравится?</label>
-			<input type="checkbox" name="radio" value="Телефон"> Телефон <br>
-			<input type="checkbox" name="radio" value="Планшет"> Планшет <br>
-			<input type="checkbox" name="radio" value="Ноутбук"> Ноутбук <br>
-			<label for="check1">Откуда Вы узнали о нас?</label>
-			<input type="radio" name="check1"> Друзья <br>
-			<input type="radio" name="check1"> СМИ<br>
-			<input type="radio" name="check1"> Сам нашел(сама нашла)...нечаянно<br>
-			<label>Выберите Ваш любимый Браузер</label>
-			<select name="select" id="sel">
-				<option value="Chrome">Chrome</option>
-				<option value="Firefox">Firefox</option>
-				<option value="Opera">Opera</option>
-			</select>
-		</div>
-		<div class="map"> 
-			<div>Мы на карте</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2181.6519321233604!2d60.64130580885387!3d56.851914045356196!2m3!10!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16dd2ce16a20b%3A0xb152d417af39d40a!2z0JbQuNCy0L7QtSDRgdC70L7QstC-!5e0!3m2!1sru!2sru4v1490174714022" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>			</div>
-			<input type="submit" value="Написать">			
-			<input type="reset" value="Стереть всё">
+	<div class="wrapper">
 
-	</fieldset>
-</form>
+		<div class="header">
+				<a href="index.html"><img src="img/main_icon.png" class="main_icon" alt="main_icon"></a>
+				<h1>Магазин сотовых телефонов</h1>	
+				<ul class="main_menu">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="aboutUs.html">О нас</a></li>
+					<li><a href="Contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+		<form action="#" class="reg_form">
+			<fieldset>
+				<legend>Напишите нам:</legend>
+				<div class="input_fields">
+					<label for="name">Ваше имя</label>
+					<input type="text" name="name" placeholder="Иван">
+					<label for="surname">Ваша фамилия</label>
+					<input type="text" name="surname" placeholder="Сусанин">
+					<label for="email">Ваш е-мейл:</label>
+					<input type="text" name="email" placeholder="daleko_v_lesah@boloto.org">
+				</div>
+				<div class="comment">
+					<textarea name="comment" placeholder="Комментарий" cols="35" rows="15"></textarea>
+				</div>
+				<div class="anketa">
+					<label for="radio">Какой вид электроники Вам больше нравится?</label>
+					<input type="checkbox" name="radio" value="Телефон"> Телефон <br>
+					<input type="checkbox" name="radio" value="Планшет"> Планшет <br>
+					<input type="checkbox" name="radio" value="Ноутбук"> Ноутбук <br>
+					<label for="check1">Откуда Вы узнали о нас?</label>
+					<input type="radio" name="check1"> Друзья <br>
+					<input type="radio" name="check1"> СМИ<br>
+					<input type="radio" name="check1"> Сам нашел(сама нашла)...нечаянно<br>
+					<label>Выберите Ваш любимый Браузер</label>
+					<select name="select" id="sel">
+						<option value="Chrome">Chrome</option>
+						<option value="Firefox">Firefox</option>
+						<option value="Opera">Opera</option>
+					</select>
+					<input type="submit" value="Написать">			
+					<input type="reset" value="Стереть всё">
+				</div>
+				<div class="map"> 
+					<div>Мы на карте</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2181.6519321233604!2d60.64130580885387!3d56.851914045356196!2m3!10!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16dd2ce16a20b%3A0xb152d417af39d40a!2z0JbQuNCy0L7QtSDRgdC70L7QstC-!5e0!3m2!1sru!2sru4v1490174714022" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>			
+				</div>
+
+			</fieldset>
+		</form>
+	</div>
+	<div class="footer">
+		<span>&copy; All rights reserved, Arbuzoff &amp; Co, 2017</span>
+		</div>	
 </body>
 </html>

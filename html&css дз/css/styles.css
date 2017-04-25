@@ -1,12 +1,29 @@
 /*Все страницы*/
 *
-{
-	margin: 0;
+{	margin: 0;
 	padding: 0;
 }
+
+@font-face 
+{
+	    font-family: "CyrillicOld";
+	    src: url("CyrillicOld.eot");
+	    src: url("CyrillicOld.eot?#iefix") format("embedded-opentype"),
+        url("CyrillicOld.woff") format("woff"),
+        url("CyrillicOld.ttf") format("truetype"),
+        url("CyrillicOld.svg#JournalRegular") format("svg");
+	    font-weight: normal;
+	    font-style: normal;
+	}
 html
 {
 	background-color: #6690D0;
+}
+.wrapper
+{
+	width: 1000px;
+	margin:0 auto;
+
 }
 div
 {
@@ -20,44 +37,68 @@ h1,.header3
 /*Меню*/
 .main_menu	
 {
-	float: left;
-	width: 120px;
+	
+	text-align: right;
+	width: auto;
+	height: 50px;
 	list-style-position: inside;
-	list-style-image: url(../img/icon.png);
+	border:transparent;
+	
 
 }
-.main_menu ul li a
+.main_menu li a
 {
 	text-decoration: none;
 	font-family: cyrillicold;
-	font: cyrillicold;
 	font-size: 18px;
+	
 }
-.main_menu ul li a:active
+.main_menu li a:active
 {
 	color: lime;
 }
-.main_menu ul li a:visited
+.main_menu li a:visited
 {
 	color: gold;
 }
-.main_menu ul li a:hover
+.main_menu li:hover
 {
-	text-decoration: underline;
-	transform: 0.3s;
-	padding: 5px;
+	
+	background-color: lime;
+	padding-top: 5px;
+}
+.main_menu li a:hover
+{
 	color: white;
+	text-decoration: underline;
+}
+.main_menu li:before
+{
+	content: url(../img/icon.png);
+}
+.main_menu li
+{
+	list-style: none;
+	display: inline-block;
+	transition: all 0.4s;
+	vertical-align: top;
+}
+.h3:hover~ .main_menu
+{
+	background-color: lime;
 }
 /*index*/
 .hi_word
 {
-	margin-left: 135px;
-	
-	width:550px;
+	text-align: center;
+	font-size: 24px;
+	color:#FFDD00;
 }
 .main_icon
 {
 	float: left;
+	position: absolute;
+	left: 20px;
 }
 .header
 {
@@ -65,17 +106,24 @@ h1,.header3
 	height: 100px;
 	border:2px solid lime;
 	text-align: center;
+	position: relative;
 }
-.img, .main_icon
+.main_icon, .img1
 {
 	width: 100px;
 	height: 100px;
+}
+.img1
+{
+	display: block;
 }
 /* IMG расположены на страницах: Каталог, Товары (на каждом из них)*/
 .img
 {
 	border: 3px groove lime;
-	display: block;
+	float: left;
+	width: 200px;
+	height: 200px;
 
 }
 /*Контакты*/
@@ -89,19 +137,96 @@ form fieldset label, .input_fields input
  }
  form div
  {
- 	border:0;
+ 	border:transparent;
  }
 .reg_form
 {
 	margin:0 auto;
+	width: 700px;
 }
 .input_fields input
 {
 	width: 200px;
 	height: 20px;
 }
+.input_fields input[name="email"]:focus
+{
+color:green;
+background-color: gold;
+}
+.input_fields input[type="submit"],.input_fields input[type="reset"]
+{
+	border-radius:15px 0px;
+	background-color: #7E3F91;
+	color: white;
+}
 /*Запрет обтекания на страницах Товаров*/
 .item, .img
 {
 	clear: both;
+}
+input[type="text"]
+{
+	text-transform: capitalize;
+}
+.character tr td:first-child, .character tr td:nth-child(3n)
+{
+	width: 15px;
+}
+.character tr td:nth-child(2n)
+{
+	width:250px;
+}
+.character
+{
+	text-align: center;
+	border-collapse: collapse;
+	border:3px groove gold;
+}
+.character tr td
+{
+	border:1px solid black;
+}
+#sel
+{
+	display: block;
+}
+.map
+{
+	float: right;
+}
+.item a
+{
+	padding-top: 20px;
+	padding-left: 10px;
+	display: inline-block;
+
+}
+.item
+{
+	text-align: center;
+}
+.footer
+{
+	background-color: orange;
+	width: 980px;
+	margin:0 auto;
+	padding-top: 15px;
+	padding-right: 15px;
+	text-align: right;
+}
+
+.btn
+{
+	border-radius: 15px 35px;
+	font-family: cyrillicold;
+	color: white;
+	background:#3AAFCE ;
+	background: linear-gradient(to top,#297A91,#3AAFCE);
+	font-size: 36px;
+	margin-right: 180px;
+}
+.btn:hover
+{
+	color: gold;
 }

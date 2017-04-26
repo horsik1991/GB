@@ -42,7 +42,7 @@ body
 {
 	color:white;
 }
-.hor_menu_main ul li a:hover, .city
+.hor_menu_main ul li a:hover, .city,.modal_close:hover
 {
 	color:#FF6600;
 }
@@ -68,4 +68,56 @@ body
 .city
 {
 	padding-left: 30px;
+	display: block;
+}
+/*Модальное окно*/
+.modal_window_cities
+{
+	width: 500px;
+	height: 500px;
+	position: fixed;
+	z-index: 5;
+	opacity: 0;
+	display: none;
+	top: 45%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -250px; 
+	padding: 20px 10px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+.modal_close
+{
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+#overlay {
+	z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	background-color:#000; /* чернaя */
+	opacity:0.8; /* нo немнoгo прoзрaчнa */
+	-moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; /* рaзмерoм вo весь экрaн */
+	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left:0;
+	cursor:pointer;
+	display:none; /* в oбычнoм сoстoянии её нет) */
+}
+.city_search
+{
+	width: 450px;
+	border-radius: 7px;
+	box-shadow: 1px 1px 5px 2px #FF6600;
+	background: #D9E5EE;
+	background: linear-gradient(to top,#fff, #D9E5EE);
+	font-style: italic;
+	
 }

@@ -4,6 +4,8 @@
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="e96.css">
 	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/3.js"></script>
+	<script type="text/javascript" src="js/mw.js"></script>
 	<title>Е96 - Крупнейший гипермаркет электроники</title>
 </head>
 <body>
@@ -24,7 +26,7 @@
 			<a href="https://e96.ru">
 				<img src="img/logo.png" alt="logo">
 			</a>	
-			<div class="city clear">Первоуральск</div>
+			<a href="#" class="city clear go">Первоуральск</a>
 		</div>
 		<div class="advantages"></div>
 		<div class="slider"></div>
@@ -43,5 +45,18 @@
 		</div>
 		</div>
 	</div>
+	<!-- Модальное окно с выборкой по городам --> 
+	<div class="modal_window_cities">
+	    <div class="modal_close">X</div> 
+	    <div class="modal_cities_wrapper">
+	      	<div>Выбор населенного пункта</div>
+	      	<input type="text" placeholder="Поиск города" class="city_search">
+	      	<div class="popular_cities">Популярные города региона: 
+	      	<a href="#">Богданович </a><a href="#">Белоярский </a><a href="#">Сухой Лог </a>
+	      	</div>
+
+	    </div>
+	</div>
+	<div id="overlay"></div><!-- Пoдлoжкa -->
 </body>
 </html>

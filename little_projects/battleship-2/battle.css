@@ -1,0 +1,73 @@
+*
+{
+	margin: 0;
+	padding:0;
+}
+body
+{
+	background-color: #D9E5EE;
+}
+.battlefield td
+ {
+ 	border: 1px solid white;
+ 	width: 90px;
+ 	height: 90px;
+ 	
+ 	 	
+ }
+ .battlefield
+ {
+	position: relative;
+ 	top:78px;
+ 	left:78px;
+ 	border-collapse: collapse;
+ }
+.wrapper
+ {
+ 	background-color: green;
+ 	background-image: url(img/battlefield.png);
+ 	background-repeat: no-repeat;
+ 	width: 1024px;
+ 	height: 1024px;
+ 	margin: 0 auto;
+
+
+ }
+ .msg, .wrap_form
+ {
+ 	border: 5px groove lime;
+ 	width: 250px;
+ 	height: 100px;
+ 	text-align: center;
+ 	position: fixed;
+ }
+ .msg
+ {
+ 	float: left;
+ 	top:110px;
+ }
+ #info
+ {
+ 	background-color: #9AA3A9;
+ 	width: 220px;
+ 	height: 30px;
+ 	margin: 0 auto;
+ 	margin-top: 20px;
+ }
+ .wrap_form>form>input
+ {
+ 	margin-top:20px;
+ }
+.wrap_form>form>input[type="text"]
+{
+	width: 165px;
+	height: 30px;
+}
+.miss
+{
+	background: transparent url("img/miss.png") no-repeat center center
+}
+.boom
+{
+	background: transparent url("img/boom.png") no-repeat center center
+}
